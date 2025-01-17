@@ -1,7 +1,8 @@
 Theo như yêu cầu bài toán và phương án đã chọn là phương án 3.
 
-Bên thứ 3: Hệ thống talentLMS
 Mô tả ứng dụng Knowledge Bank là một ứng dụng để cho người dung truy cập vào để xem các thông tin huấn luyện sử dụng các dịch vụ (hình ảnh, video, text) và họ sẽ làm bài quiz để kiểm tra kiến thức của họ
+
+Bên thứ 3 được chọn: Hệ thống talentLMS
 
 Lý do tại sao chọn talentLMS:
 - Course trong đây hỗ trợ đa dạng các kiểu nội dung (hình ảnh, video, text)
@@ -13,7 +14,8 @@ Lý do tại sao chọn talentLMS:
 
 Em sẽ thiết kết back-end như sau:
 - Các tính năng thêm, xóa, sửa đã có sẵn trên trang talentLMS và vậy ở đây em chỉ thiết kế chức năng get_courses, get_one_course,... các tính năng để hiển thị thông tin lên cho khách hàng.
-- Xây dựng chức năng đăng nhập cho hệ thống sử dụng jwt.
+- Xây dựng chức năng đăng nhập cho hệ thống sử (Simple OAuth2 with Password and Bearer).
+(Tham khảo tại https://fastapi.tiangolo.com/tutorial/security/simple-oauth2)
 
 Cấu trúc thư mục:
 - Conttroller: là nơi chứa các route của ứng dụng.
@@ -29,4 +31,11 @@ Các file:
 và 1 số file khác
 
 Cách chạy ứng dụng:
+- Clone project: git clone https://github.com/A3zoo/talentLMS.git
+- Tạo môi trường ảo python: https://python-forum.io/thread-39414.html
+- install các thư viện cần thiết: pip install -r requirements.txt
+- Run chương trình: uvicorn app:app --reload
+- Truy cập vào: http://127.0.0.1:8000/docs để vào giao diện Swagger UI
+- Thay vào biến môi trường TALENTLMS_API_KEY và TALENTLMS_BASE_URL
+
 

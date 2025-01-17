@@ -4,7 +4,7 @@ from app_environment import AppEnvironment
 from fastapi.middleware.cors import CORSMiddleware
 from controllers import (
     course_controller,
-    user_controller
+    login_controller
 )
 
 app = FastAPI(debug=env.DEBUG)
@@ -18,5 +18,5 @@ if AppEnvironment.is_local_env(env.APP_ENV):
         allow_headers=["*"],
     )
 
+app.include_router(login_controller.router)
 app.include_router(course_controller.router, prefix="/api")
-app.include_router(user_controller.router, prefix="/api")

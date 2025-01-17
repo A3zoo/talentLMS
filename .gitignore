@@ -1,0 +1,66 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Python coverage reports
+.coverage
+*.cover
+*.hypothesis/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+*.pytest_cache/
+
+# Flake8
+.flake8
+
+# pylint
+pylint-report.txt
+pylint-output.txt
+
+# Docker
+.docker/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# IDE-specific files
+*.iml
+
+
+__pycache__

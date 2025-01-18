@@ -18,7 +18,7 @@ Em sẽ thiết kết back-end như sau:
 ++ get_a_course: Lấy khóa học theo id<br>
 ++ get_test: Lấy bài test của khóa học<br>
 ++ get_answer: Lấy kết quả đánh giá bài test<br>
-- Xây dựng chức năng đăng nhập cho hệ thống sử (Simple OAuth2 with Password and Bearer).<br>
+- Xây dựng chức năng đăng nhập cho hệ thống (Simple OAuth2 with Password and Bearer).<br>
 ++ Sử dụng OAuth2PasswordBearer(tokenUrl="login")<br>
 ++ Trả về token cho người dùng<br>
 ++ Xác thực người dùng mỗi khi truy cập tới route<br>

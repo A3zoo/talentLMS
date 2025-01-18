@@ -13,15 +13,15 @@ Lý do tại sao chọn talentLMS:
 -----> Từ những lý do đó ta có thể chọn phương án này
 
 Em sẽ thiết kết back-end như sau:
-- Các tính năng thêm, xóa, sửa đã có sẵn trên trang talentLMS và vậy ở đây em chỉ thiết kế chức năng 
-++ get_courses: lấy toàn bộ khóa học
-++ get_a_course: Lấy khóa học theo id
-++ get_test: Lấy bài test của khóa học
-++ get_answer: Lấy kết quả đánh giá bài test
-- Xây dựng chức năng đăng nhập cho hệ thống sử (Simple OAuth2 with Password and Bearer).
-++ Sử dụng OAuth2PasswordBearer(tokenUrl="login")
-++ Trả về token cho người dùng
-++ Xác thực người dùng mỗi khi truy cập tới route
+- Các tính năng thêm, xóa, sửa đã có sẵn trên trang talentLMS và vậy ở đây em chỉ thiết kế chức năng <br>
+++ get_courses: lấy toàn bộ khóa học<br>
+++ get_a_course: Lấy khóa học theo id<br>
+++ get_test: Lấy bài test của khóa học<br>
+++ get_answer: Lấy kết quả đánh giá bài test<br>
+- Xây dựng chức năng đăng nhập cho hệ thống sử (Simple OAuth2 with Password and Bearer).<br>
+++ Sử dụng OAuth2PasswordBearer(tokenUrl="login")<br>
+++ Trả về token cho người dùng<br>
+++ Xác thực người dùng mỗi khi truy cập tới route<br>
 (Tham khảo tại https://fastapi.tiangolo.com/tutorial/security/simple-oauth2)
 
 Cấu trúc thư mục:
@@ -42,8 +42,9 @@ Cách chạy ứng dụng:
 - Tạo môi trường ảo python: https://python-forum.io/thread-39414.html
 - install các thư viện cần thiết: pip install -r requirements.txt
 - Run chương trình: uvicorn app:app --reload
-- Truy cập vào: http://127.0.0.1:8000/docs để vào giao diện Swagger UI
 - Thay vào biến môi trường TALENTLMS_API_KEY và TALENTLMS_BASE_URL
+- Truy cập vào: http://127.0.0.1:8000/docs để vào giao diện Swagger UI
+
 
 
 Các test case:

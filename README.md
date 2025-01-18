@@ -39,3 +39,17 @@ Cách chạy ứng dụng:
 - Thay vào biến môi trường TALENTLMS_API_KEY và TALENTLMS_BASE_URL
 
 
+Các test case:
+- Lấy thông tin từng khóa học
+@router.get("/courses/{id}")
+id = 125 or 124
+
+- Lấy bài test
+@router.get("/courses/{course_id}/test/{id}")
+course_id = 125 & id = 2065 hoặc 2066
+
+- Lấy kết quả test
+@router.get("/courses/{course_id}/testanswer/{id}")
+course_id = 125 & id = 2065 hoặc 2066
+
+

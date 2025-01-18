@@ -22,7 +22,7 @@ class HttpClient:
                 response.raise_for_status()  # Nếu mã trạng thái không phải 2xx, raise exception
                 return response.json()  # Trả về dữ liệu JSON đã giải mã
             except httpx.HTTPStatusError as http_err:
-                handle_error(http_err, response)
+                handle_error(http_err, response) # type: ignore
             except Exception as err:
                 handle_error(err)
 
@@ -37,7 +37,7 @@ class HttpClient:
                 response.raise_for_status()
                 return response.json()
             except httpx.HTTPStatusError as http_err:
-                handle_error(http_err, response)
+                handle_error(http_err, response) # type: ignore
             except Exception as err:
                 handle_error(err)
 
@@ -52,7 +52,7 @@ class HttpClient:
                 response.raise_for_status()
                 return response.json()
             except httpx.HTTPStatusError as http_err:
-                handle_error(http_err, response)
+                handle_error(http_err, response) # type: ignore
             except Exception as err:
                 handle_error(err)
 
@@ -67,6 +67,6 @@ class HttpClient:
                 response.raise_for_status()
                 return response.json()
             except httpx.HTTPStatusError as http_err:
-                handle_error(http_err, response)
+                handle_error(http_err, response) # type: ignore
             except Exception as err:
                 handle_error(err)

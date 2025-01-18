@@ -42,8 +42,9 @@ Cách chạy ứng dụng:
 - Tạo môi trường ảo python: https://python-forum.io/thread-39414.html
 - install các thư viện cần thiết: pip install -r requirements.txt
 - Run chương trình: uvicorn app:app --reload
-- Truy cập vào: http://127.0.0.1:8000/docs để vào giao diện Swagger UI
 - Thay vào biến môi trường TALENTLMS_API_KEY và TALENTLMS_BASE_URL
+- Truy cập vào: http://127.0.0.1:8000/docs để vào giao diện Swagger UI
+
 
 
 Các test case:

@@ -46,6 +46,9 @@ Cách chạy ứng dụng:
 - Truy cập vào: http://127.0.0.1:8000/docs để vào giao diện Swagger UI
 
 
+Đăng nhập: 
+- Username: johndoe
+- Password: secret
 
 Các test case:
 - Lấy thông tin từng khóa học

@@ -13,8 +13,15 @@ Lý do tại sao chọn talentLMS:
 -----> Từ những lý do đó ta có thể chọn phương án này
 
 Em sẽ thiết kết back-end như sau:
-- Các tính năng thêm, xóa, sửa đã có sẵn trên trang talentLMS và vậy ở đây em chỉ thiết kế chức năng get_courses, get_one_course,... các tính năng để hiển thị thông tin lên cho khách hàng.
+- Các tính năng thêm, xóa, sửa đã có sẵn trên trang talentLMS và vậy ở đây em chỉ thiết kế chức năng 
+++ get_courses: lấy toàn bộ khóa học
+++ get_a_course: Lấy khóa học theo id
+++ get_test: Lấy bài test của khóa học
+++ get_answer: Lấy kết quả đánh giá bài test
 - Xây dựng chức năng đăng nhập cho hệ thống sử (Simple OAuth2 with Password and Bearer).
+++ Sử dụng OAuth2PasswordBearer(tokenUrl="login")
+++ Trả về token cho người dùng
+++ Xác thực người dùng mỗi khi truy cập tới route
 (Tham khảo tại https://fastapi.tiangolo.com/tutorial/security/simple-oauth2)
 
 Cấu trúc thư mục:

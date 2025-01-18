@@ -10,7 +10,7 @@ router = APIRouter()
 # Đăng nhập sẽ trả về token
 @router.post("/login")
 async def login(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
-    return create_token(form_data.username, form_data.password)
+    return await create_token(form_data.username, form_data.password)
 
 
 

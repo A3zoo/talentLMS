@@ -15,7 +15,7 @@ class HttpClient:
         :param endpoint: Endpoint của API (ví dụ: "courses").
         :param params: Tham số truy vấn (query parameters) dưới dạng dictionary.
         """
-        url = f"{self.base_url}/{endpoint}"
+        url = f"{self.base_url}{endpoint}"
         async with httpx.AsyncClient() as client:
             try:
                 response = await client.get(url, params=params, auth=self.auth)
@@ -45,7 +45,7 @@ class HttpClient:
         """
         Thực hiện yêu cầu PUT bất đồng bộ để cập nhật dữ liệu trên TalentLMS với Basic Authentication.
         """
-        url = f"{self.base_url}/{endpoint}"
+        url = f"{self.base_url}{endpoint}"
         async with httpx.AsyncClient() as client:
             try:
                 response = await client.put(url, json=data, auth=self.auth)
@@ -60,7 +60,7 @@ class HttpClient:
         """
         Thực hiện yêu cầu DELETE bất đồng bộ để xóa dữ liệu trên TalentLMS với Basic Authentication.
         """
-        url = f"{self.base_url}/{endpoint}"
+        url = f"{self.base_url}{endpoint}"
         async with httpx.AsyncClient() as client:
             try:
                 response = await client.delete(url, auth=self.auth)

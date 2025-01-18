@@ -1,8 +1,9 @@
 from pydantic import BaseModel, HttpUrl
-from typing import Optional
+from typing import Optional, List
+from .unit import Unit
 
 class Course(BaseModel):
-    id: str
+    id: int
     name: str
     code: str
     category_id: str
@@ -23,3 +24,4 @@ class Course(BaseModel):
     big_avatar: HttpUrl
     certification: Optional[str] = None
     certification_duration: Optional[str] = None
+    units: Optional[List[Unit]] = None

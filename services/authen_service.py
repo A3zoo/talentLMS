@@ -4,12 +4,13 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
 from fastapi import APIRouter
-from models.user_model import *
+from models.user import *
 
 router = APIRouter()
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
+#Hàm bâm demo có thể sử dụng thuật toán SHA25
 def fake_hash_password(password: str):
     return "fakehashed" + password
 
